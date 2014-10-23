@@ -39,7 +39,7 @@
 
     // Tick Values
     //var tickValues = [40, 60, 80, 120, 180, 300, 400];
-    var tickValues = [40, 60, 80, 120, 180, 225, 300, 400];
+    var tickValues = [40, 60, 80, 120, 180, 250, 300, 400];
     if (browserSettings.units == "mmol") {
         tickValues = [2.0, 3.0, 4.0, 6.0, 10.0, 15.0, 22.0];
     }
@@ -49,7 +49,7 @@
       .style("opacity", 0);
     //TODO: get these from the config
     //var targetTop = 180,
-    var targetTop = 225,
+    var targetTop = 250,
         targetBottom = 80;
 
     var futureOpacity = d3.scale.linear( )
@@ -796,7 +796,7 @@
                 //TODO: alarmHigh/alarmLow probably shouldn't be here
                 if (browserSettings.alarmHigh) {
                     //$('.container .current').toggleClass('high', latestSGV.y > 180);
-                    $('.container .current').toggleClass('high', latestSGV.y > 225);
+                    $('.container .current').toggleClass('high', latestSGV.y > 250);
                 }
                 if (browserSettings.alarmLow) {
                     $('.container .current').toggleClass('low', latestSGV.y < 70);
